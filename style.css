@@ -167,6 +167,12 @@ input.search:focus:focus-visible {
     flex: 0 0 auto;
 }
 
+.icon.notification:hover {
+    border-radius: 100%;
+    background-color: #8281813a;
+    box-shadow: 0 0 1px 6px #82818128;
+}
+
 #notif-container .profile-picture {
     width: 58px;
     height: 58px;
@@ -286,6 +292,11 @@ input.search:focus:focus-visible {
     display: flex;
     flex-flow: column;
     align-items: end;
+}
+
+.project-tile .icon:hover {
+    border-radius: 100%;
+    background-color: #8281811f;
 }
 
 .project-desc {
