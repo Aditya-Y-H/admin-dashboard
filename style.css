@@ -85,6 +85,8 @@ body {
 .caption {
     font-weight: 500;
     font-size: 1.2rem;
+
+    margin: 6px 0;
 }
 
 #project-tiles {
@@ -171,7 +173,6 @@ body {
 }
 
 .trending-tile > div {
-    font-size: 0.6rem;
     flex: 1 0 auto;
 }
 
@@ -182,7 +183,7 @@ body {
 }
 
 .trending-tile p {
-
+    font-size: 0.675rem;
     color: #636363;
 }
 
