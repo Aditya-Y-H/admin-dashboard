@@ -88,6 +88,8 @@ body {
 #page-head {
     background-color: white;
     padding: 8px 36px;
+    box-shadow: 5px -0px 10px 3px #0e0e0e5f;
+    z-index: 1;
 }
 
 #page-head .row {
