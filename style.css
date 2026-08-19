@@ -2,6 +2,15 @@
     font-size: 24px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -52,22 +61,54 @@ body {
 
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr;
+    padding: 24px;
 }
 
 #projects-container {
     grid-row: 1 / -1;
+
+    grid-template-rows: min-content auto;
+    padding: 24px;
+    
+}
+
+.caption {
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 #project-tiles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
     gap: 24px;
-    padding: 24px;
 }
 
 .project-tile {
+    box-sizing: border-box;
     border-radius: 8px;
     border-left: 8px solid #f0b42a;
+
+    padding: 36px 12px 0;
+
+    display: flex;
+    flex-flow: column;
+    align-items: end;
+}
+
+.project-desc {
+    flex: 1 1 90%;
+}
+
+.tile-options-container {
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.tile-options {
+    width: 26px;
+    height: 26px;
+
+    padding: 18px;
 }
 
 .tile {
