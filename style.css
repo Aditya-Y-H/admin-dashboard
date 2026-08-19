@@ -57,11 +57,21 @@ body {
 /* Tiles */
 
 #tiles-container {
+    --subtile-shadow: 3px 3px 6px 1px #8d8383b8;
+
     background-color: #e2e8f0;
 
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr;
     padding: 24px;
+}
+
+.side-tile-container.tile-container {
+    box-shadow: var(--subtile-shadow);
+}
+
+#project-tiles .tile {
+    box-shadow:var(--subtile-shadow);
 }
 
 #projects-container {
