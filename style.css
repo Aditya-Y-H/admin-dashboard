@@ -47,30 +47,37 @@ body {
 
 #page-head {
     background-color: white;
+    padding: 8px 36px;
+}
 
-    display: grid;
-    grid-template: min-content min-content / 3fr 1fr;
-
-    padding: 18px 24px;
+#page-head .row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 12px;
 }
 
 #search-container {
+    flex: 0 1 65%;
+
     padding: 24px;
 
     display: flex;
     justify-content: start;
     align-items: center;
+    gap: 14px;
 
     --search-box-size: 36px;
 }
 
-.search-icon {
+.search-label {
+    flex: 0 0 auto;
+
     width: var(--search-box-size);
     height: var(--search-box-size);
 
-    flex: 0 0 auto;
-
-    margin: 0 12px;
+    margin: 0px;
+    padding: 0px;
 }
 
 input.search {
@@ -88,35 +95,38 @@ input.search:focus:focus-visible {
 }
 
 #notif-container {
+    flex: 0 1 auto;
+
     display: flex;
-    gap: 24px;
+    gap: 36px;
     justify-content: start;
     align-items: center;
 }
 
 .icon.notification {
-    width: 28px;
-    height: 28px;
+    width: 36px;
+    height: 36px;
 
     flex: 0 0 auto;
 }
 
 #notif-container .profile-picture {
-    width: 48px;
-    height: 48px;
+    width: 58px;
+    height: 58px;
 
     flex: 0 0 auto;
 }
 
 #notif-container p {
-    margin-left: 12px;
     font-weight: bold;
-    font-size: 0.825rem;
+    font-size: 0.9rem;
 
     flex: 1 1 auto;
 }
 
 #profile-container {
+    flex: 0 1 60%;
+
     --profile-picture-size: 72px;
 
     display: grid;
@@ -139,10 +149,6 @@ input.search:focus:focus-visible {
     font-size: 0.8rem;
 }
 
-#action-btn-container {
-    /* Pass */
-}
-
 #action-btn-container button {
     border-radius: 36px;
     border: none;
@@ -154,6 +160,8 @@ input.search:focus:focus-visible {
     padding: 4px;
     font-size: 1rem;
     font-weight: bold;
+
+    margin: 0 24px;
 }
 
 
