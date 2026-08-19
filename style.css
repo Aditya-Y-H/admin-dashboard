@@ -54,6 +54,39 @@ body {
     padding: 12px 24px;
 }
 
+#search-container {
+    padding: 24px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    --search-box-size: 36px;
+}
+
+.search-icon {
+    width: var(--search-box-size);
+    height: var(--search-box-size);
+
+    flex: 0 0 auto;
+
+    margin: 0 12px;
+}
+
+input.search {
+    background-color: #e2e8f0;
+    border-radius: 35px;
+    border: none;
+    height: var(--search-box-size);
+
+    flex: 0 1 70%;
+}
+
+input.search:focus:focus-visible {
+    outline: none;
+    box-shadow: 0 0 3px 1px rgba(130, 129, 129, 0.775)
+}
+
 /* Tiles */
 
 #tiles-container {
