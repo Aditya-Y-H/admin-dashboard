@@ -87,6 +87,35 @@ input.search:focus:focus-visible {
     box-shadow: 0 0 3px 1px rgba(130, 129, 129, 0.775)
 }
 
+#notif-container {
+    display: flex;
+    gap: 24px;
+    justify-content: start;
+    align-items: center;
+}
+
+.icon.notification {
+    width: 28px;
+    height: 28px;
+
+    flex: 0 0 auto;
+}
+
+#notif-container .profile-picture {
+    width: 48px;
+    height: 48px;
+
+    flex: 0 0 auto;
+}
+
+#notif-container p {
+    margin-left: 12px;
+    font-weight: bold;
+    font-size: 0.825rem;
+
+    flex: 1 1 auto;
+}
+
 /* Tiles */
 
 #tiles-container {
