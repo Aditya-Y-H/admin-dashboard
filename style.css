@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
 
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: min-content 1fr;  
 }
 
@@ -27,20 +27,60 @@ body {
     box-sizing: border-box;
     grid-row: 1 / -1;
 
-    padding: 16px;
+    padding: 16px 0;
     color:white;
     background-color: #1992d4;
+
+    fill: white;
+}
+
+#logo-container {
+    margin: 4px 16px;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#logo-container:hover {
+    cursor: pointer;
+}
+
+#logo {
+    flex: 0 0 auto;
+
+    width: 72px;
+    height: 72px;
+}
+
+#logo-desc {
+    flex: 1 1 auto;
 }
 
 #sidebar ul {
     list-style-type: none;
     padding: 0;
     margin: 36px 0;
+    line-height: 2.25;
 }
 
-#logo-container {
-    font-size: 1.5rem;
-    font-weight: bold;
+.sidebar-menu li {
+    display: flex;
+    padding-left: 18px;
+    gap: 18px;
+    align-items: center;
+}
+
+.sidebar-menu li:hover {
+    cursor: pointer;
+    background-color: #0a9eed;
+}
+
+.sidebar-menu li .icon {
+    width: 32px;
+    height: 32px;
 }
 
 /* Page-Head */
