@@ -4,7 +4,7 @@
 
 h1, h2, h3, h4, h5, h6 {
     padding: 0px;
-    margin: 0px;
+    margin: 3px 0px;
 }
 
 p {
@@ -133,10 +133,59 @@ body {
     border-bottom: 2px solid #d2d2d2;
 }
 
-.announcement-tile > p{
+.announcement-tile > p {
     font-size: 0.7rem;
     margin-bottom: 14px;
     color: #636363;
+}
+
+#trending-container {
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+#trending-tiles {
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: white; 
+}
+
+.trending-tile {
+    display: flex;
+    flex-flow: row;
+}
+
+.trending-tile {
+    padding: 12px 6px;
+}
+
+.trending-tile > div {
+    font-size: 0.6rem;
+    flex: 1 0 auto;
+}
+
+.trending-tile h6 {
+    font-size: 0.6rem;
+    margin: 0;
+    padding: 0;
+}
+
+.trending-tile p {
+
+    color: #636363;
+}
+
+.trending-tile > .profile-picture {
+    width: 48px;
+    height: 48px;
+
+    flex: 0 0 auto;
+    margin: 0 6px;
+}
+
+.profile-picture {
+    border-radius: 100%;
 }
 
 .tile {
