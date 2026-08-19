@@ -139,6 +139,23 @@ input.search:focus:focus-visible {
     font-size: 0.8rem;
 }
 
+#action-btn-container {
+    /* Pass */
+}
+
+#action-btn-container button {
+    border-radius: 36px;
+    border: none;
+    color: white;
+    background-color: #1992d4;
+    box-sizing: border-box;
+    width: 120px;
+    height: 46px;
+    padding: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 
 /* Tiles */
 
