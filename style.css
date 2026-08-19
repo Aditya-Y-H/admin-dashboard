@@ -51,7 +51,7 @@ body {
     display: grid;
     grid-template: min-content min-content / 3fr 1fr;
 
-    padding: 12px 24px;
+    padding: 18px 24px;
 }
 
 #search-container {
@@ -115,6 +115,30 @@ input.search:focus:focus-visible {
 
     flex: 1 1 auto;
 }
+
+#profile-container {
+    --profile-picture-size: 72px;
+
+    display: grid;
+    grid-template: 1fr 1fr / var(--profile-picture-size) 1fr;
+    column-gap: 16px;
+    align-items: center;
+}
+
+#profile-container .profile-picture {
+    grid-row: 1 / -1;
+
+    width: var(--profile-picture-size);
+    height: var(--profile-picture-size);
+}
+
+#profile-container p {
+    font-weight: bold;
+}
+#profile-container p:first-of-type {
+    font-size: 0.8rem;
+}
+
 
 /* Tiles */
 
